@@ -1,0 +1,191 @@
+@font-face {
+    font-family: real1;
+    src: url(./fonts/kesslersuperdisplayweb-regular.woff2);
+}
+
+@font-face {
+    font-family: real2;
+    src: url(./fonts/FraktionMono-Regular.woff2);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100vh;
+    background: #fff;
+}
+.btn{
+    font-family: "real2";
+    border-radius: 25px;
+    padding: 8px 30px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 42%;
+    cursor: pointer;
+}
+
+.logo h4{
+    font-family: "real1";
+    font-weight: 500;
+    font-size: 30px;
+}
+.logo h4 a{
+    list-style: none;
+    text-decoration: none;
+    color: #111;
+}
+
+.top-center h4{
+    font-family: "real1";
+    font-size: 80px;
+}
+
+
+.l-center{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: all ease 1s;
+}
+
+.r-center{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: all ease 1s;
+}
+.bottom-center h4{
+    font-family: "real1";
+    font-size: 80px;
+}
+.navbar{
+    position: absolute;
+    bottom:5%;
+    left:39%;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    padding-left: 50px;
+    font-family: "real2";
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all ease 0.3s;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100vh;
+
+}
+
+.img-all{
+    position: absolute;
+    pointer-events: none;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    transition: all ease 0.8s;
+}
+
+
+.img-one{
+
+    top: 30%;
+    left: 25%;
+    width: 20%;
+    height: 20%;
+    opacity: 0;
+    filter: blur(20px);
+
+
+}
+.img-one img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+.img-two{
+
+    top: 50%;
+    left: 55%;
+    width: 10%;
+    height: 10%;
+    opacity: 0;
+    filter: blur(20px);
+    
+
+}
+.img-two img{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+.img-three{
+
+    top: 50%;
+    left: 47%;
+    width: 6%;
+    height: 6%;
+    opacity: 0;
+    filter: blur(20px);
+    
+
+}
+.img-three img{
+    width: 100%;
+    height: 100%;
+
+
+}
+
